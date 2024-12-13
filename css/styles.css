@@ -26,6 +26,8 @@ p {
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .cont-navbar {
   display: flex;
@@ -64,12 +66,15 @@ p {
   padding-bottom: 24px;
   align-items: center;
   margin-right: 76px;
+  position: relative;
 }
 
 .head-logo-nav .head-span-logo {
   color: #2e2f42;
+  position: relative;
 }
 .link-nav {
+  position: relative;
   padding: 24px 0;
   color: #2e2f42;
   font-family: Roboto;
@@ -87,7 +92,19 @@ p {
 .link-nav:focus {
   color: #404bbf;
 }
-
+.link-nav.current {
+  color: #404bbf;
+}
+.link-nav.current::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  border-bottom: -1px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
 .contakts {
   color: #434455;
   font-family: Roboto;
@@ -120,6 +137,12 @@ p {
 
 .section-page-hero {
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
   padding: 188px 0;
   display: flex;
   justify-content: center;
@@ -132,7 +155,7 @@ p {
 
 .page-title {
   color: #ffff;
-  background-color: #2e2f42;
+  background-color: none;
   line-height: 1.07;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -196,8 +219,20 @@ img {
 .block-f {
   flex-basis: calc((100% - 3 * 24px) / 4);
   gap: 8px;
-  padding: 0;
   margin: 0;
+  background-color: blue;
+  display: block;
+  align-items: center;
+  justify-items: center;
+}
+
+.svg.icons {
+  align-items: center;
+  align-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .section {
   padding-top: 120px;
@@ -239,6 +274,7 @@ img {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   margin-bottom: 8px;
+  margin-top: 8px;
 }
 .text {
   font-size: 16px;
@@ -366,7 +402,6 @@ img {
   padding-bottom: 100px;
   margin: 0px;
   display: block;
-  height: 112px;
 }
 a {
   text-decoration: none;
