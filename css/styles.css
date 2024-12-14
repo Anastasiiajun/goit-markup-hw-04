@@ -329,6 +329,7 @@ img {
   position: relative;
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-n:hover,
 .social-n:focus {
@@ -342,7 +343,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-sn {
   fill: #f4f4fd;
@@ -481,22 +481,28 @@ img {
   height: 24px;
 }
 .li-footer {
-  padding: 0;
-  margin: 0;
-  display: flex;
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5;
+  padding: 0;
+  margin: 0;
   border-radius: 50%;
+  display: flex;
+  background-color: #4d5ae5;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-n-f {
+  align-items: center;
+  justify-content: center;
+  display: flex;
   border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.li-footer:hover,
-.li-footer:focus {
+.social-n-f:hover,
+.social-n-f:focus {
   background-color: #31d0aa;
 }
 .div-footer-text {
