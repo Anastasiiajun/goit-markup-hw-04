@@ -402,22 +402,6 @@ img {
   justify-content: center;
 }
 
-.overlay {
-  padding-top: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 164px;
-  background-color: #4d5ae5;
-  color: #f4f4fd;
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.02em;
-  position: absolute;
-
-  transform: translateY(100%);
-}
 .text-over {
   position: absolute;
   top: 0;
@@ -429,29 +413,24 @@ img {
   background-color: #4d5ae5;
   height: 100%;
   width: 100%;
-  transform: translateY(100%);
+  transform: translateY(0%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cont-over {
   position: relative;
   overflow: hidden;
 }
-.cont-img-port {
-  position: relative;
-  overflow: hidden;
-}
+
 .card-our-port {
   width: 360px;
   height: 420px;
   margin-top: 0px;
-  position: relative;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .card-our-port:hover {
   cursor: pointer;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  transform: translateY(0%);
 }
 .cont-text-port {
   padding: 32px 16px;
