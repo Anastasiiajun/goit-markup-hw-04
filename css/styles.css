@@ -325,6 +325,8 @@ img {
   gap: 24px;
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 .name-our-team .title {
   text-align: center;
@@ -351,13 +353,6 @@ img {
 }
 .svg-sn {
   fill: #f4f4fd;
-}
-.cont-soc-n {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
 }
 
 .text-our-team {
